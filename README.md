@@ -75,8 +75,7 @@
         <li>Improving the UI/UX design</li>
         <li>Adding more features (e.g., task priority, due dates, etc.)</li>
     </ul>
-
-  <h3>Steps to Contribute</h3>
+    <h3>Steps to Contribute</h3>
     <ol>
         <li>Fork the repository.</li>
         <li>Create a new branch (<code>git checkout -b feature/your-feature-name</code>).</li>
