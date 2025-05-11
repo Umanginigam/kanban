@@ -28,24 +28,29 @@ const Board: React.FC = () => {
     done: [],
   };
 
+  // Group tasks by their columns
   for (const task of project.tasks) {
     groupedTasks[task.column].push(task);
   }
 
+  // Handle the drag end event
   const onDragEnd = (result: any) => {
     const { source, destination, draggableId } = result;
 
+    // Return if the task is dropped outside any column
     if (!destination) return;
 
     const taskId = draggableId;
     const sourceColumn = source.droppableId as ColumnType;
     const destinationColumn = destination.droppableId as ColumnType;
 
+    // Move task to a different column if necessary
     if (sourceColumn !== destinationColumn) {
       moveTask(taskId, destinationColumn);
     }
   };
 
+  // Open modal for adding or editing tasks
   const handleAddTask = (column: ColumnType) => {
     setActiveColumn(column);
     setTaskToEdit(null);
@@ -79,7 +84,7 @@ const Board: React.FC = () => {
                         draggableId={task.id.toString()}
                         index={index}
                       >
-                        {(provided: any) => (
+                          {(provided: any) => (
                           <motion.div
                             layout
                             initial={{ opacity: 0.8, y: 5 }}
