@@ -1,47 +1,92 @@
-# Getting Started with Create React App
+<!DOCTYPE html>
+<html lang="en">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+</head>
 
-## Available Scripts
+<body>
+    <h1>Kanban Board</h1>
+    <p>A Kanban board built with <strong>React</strong>, <strong>TypeScript</strong>, <strong>React Beautiful DnD</strong>, <strong>Framer Motion</strong>, and <strong>Tailwind CSS</strong>. This project allows users to organize tasks across multiple columns (To Do, In Progress, Done) with drag-and-drop functionality. Users can add, edit, and move tasks between columns in a visual and intuitive interface.</p>
 
-In the project directory, you can run:
+  <h2>Features</h2>
+    <ul>
+        <li><strong>Drag and Drop Tasks</strong>: Tasks can be easily dragged from one column to another.</li>
+        <li><strong>Task Management</strong>: Users can add new tasks, edit existing tasks, and move tasks across columns.</li>
+        <li><strong>Responsive UI</strong>: The Kanban board is fully responsive and works well on both mobile and desktop devices.</li>
+        <li><strong>Modal for Task Management</strong>: The task modal allows users to add and edit tasks, including setting the task title, description, and creation date.</li>
+        <li><strong>User-Friendly Design</strong>: Simple and clean user interface with smooth animations for task transitions.</li>
+    </ul>
 
-### `npm start`
+  <h2>Technologies Used</h2>
+    <ul>
+        <li><strong>React</strong>: JavaScript library for building the user interface.</li>
+        <li><strong>TypeScript</strong>: Typed superset of JavaScript for better code quality and maintainability.</li>
+        <li><strong>React Beautiful DnD</strong>: Drag and drop functionality for React components.</li>
+        <li><strong>Framer Motion</strong>: Library for animations in React.</li>
+        <li><strong>Tailwind CSS</strong>: Utility-first CSS framework for rapid UI development.</li>
+        <li><strong>Vite</strong>: Next-generation, fast build tool for modern web applications.</li>
+    </ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   <h2>Installation</h2>
+    <p>Follow these steps to get the project up and running locally.</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  h3>Prerequisites</h3>
+    <p>Make sure you have the following installed on your machine:</p>
+    <ul>
+        <li>Node.js (version 14 or above)</li>
+        <li>npm or yarn</li>
+    </ul>
 
-### `npm test`
+  <h3>Steps to Run</h3>
+    <ol>
+        <li>Clone this repository:
+            <pre><code>git clone https://github.com/umanginigam/kanban-board.git
+        </li>
+        <li>Navigate to the project folder:
+            <pre><code>cd kanban-board</code></pre>
+        </li>
+        <li>Install the dependencies:
+            <pre><code>npm install</code></pre>
+            <p>or if you prefer Yarn:</p>
+            <pre><code>yarn install</code></pre>
+        </li>
+        <li>Run the development server:
+            <pre><code>npm start</code></pre>
+        </li>
+        <li>Open your browser and go to <a href="http://localhost:3000">http://localhost:3000</a> to see the Kanban board in action.</li>
+    </ol>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <h2>Usage</h2>
+    <ul>
+        <li><strong>Columns</strong>: There are three main columns: <strong>To Do</strong>, <strong>In Progress</strong>, and <strong>Done</strong>.</li>
+        <li><strong>Adding Tasks</strong>: Click the "+ Add Task" button to add a new task to any of the columns.</li>
+        <li><strong>Editing Tasks</strong>: Click on any task to edit it (e.g., change the title, description, or other details).</li>
+        <li><strong>Drag and Drop</strong>: Drag tasks from one column to another to update their status (e.g., move tasks from <strong>To Do</strong> to <strong>In Progress</strong>).</li>
+    </ul>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <h2>Contributing</h2>
+    <p>If you'd like to contribute to the project, feel free to open a pull request. Here are some ways you can help:</p>
+    <ul>
+        <li>Fixing bugs or issues</li>
+        <li>Improving the UI/UX design</li>
+        <li>Adding more features (e.g., task priority, due dates, etc.)</li>
+    </ul>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <h3>Steps to Contribute</h3>
+    <ol>
+        <li>Fork the repository.</li>
+        <li>Create a new branch (<code>git checkout -b feature/your-feature-name</code>).</li>
+        <li>Make your changes and commit them (<code>git commit -am 'Add new feature'</code>).</li>
+        <li>Push to the branch (<code>git push origin feature/your-feature-name</code>).</li>
+        <li>Open a pull request.</li>
+    </ol>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  <h2>License</h2>
+    <p>This project is open-source and available under the <a href="LICENSE">MIT License</a>.</p>
+</body>
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# kanban
+</html>
